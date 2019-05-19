@@ -1,0 +1,18 @@
+{% macro priceBox(title, price, features, button) %}
+<div class="card mb-3 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">{{ title }}</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">${{ price }} <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+        {% for feature in features %}
+          <li>{{ feature }}</li>
+        {% else %}
+          <li>No features</li>
+        {% endfor %}
+        </ul>
+        <button type="button" class="btn btn-lg btn-block {{ button.classes }}">{{ button.text }}</button>
+      </div>
+</div>
+{% endmacro %}

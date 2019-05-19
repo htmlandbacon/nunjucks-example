@@ -1,0 +1,10 @@
+{% extends 'templates/base-includes.nunjucks' %}
+
+{% block pageTitle %}
+
+{% endblock %}
+
+
+{% block content %}
+
+{% endblock %}

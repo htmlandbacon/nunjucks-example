@@ -1,0 +1,58 @@
+{% from '../../components/price-box.nunjucks' import priceBox %}
+
+<div class="container">
+    <div class="card-deck mb-3 text-center">
+
+    {{ 
+        priceBox(
+            title = 'Free',
+            price = '0.00',
+            features = [
+                '10 users included',
+                '2 GB of storage', 
+                'Email support', 
+                'Help center access'
+                ],
+            button = {
+                text: 'Sign up for free',
+                classes: 'btn-outline-primary'
+                }
+            )
+    }}
+
+    {{ 
+        priceBox(
+            title = 'Pro',
+            price = '15',
+            features = [
+                '20 users included',
+                '2 GB of storage',
+                'Email support',
+                'Help center access'
+                ],
+            button = {
+                text: 'Get started',
+                classes: 'btn-primary'
+                }
+            )
+    }}
+
+    {{ 
+        priceBox(
+            title = 'Enterprise',
+            price = '29',
+            features = [
+                '30 users included',
+                '15 GB of storage',
+                'Phone and email support',
+                'Help center access'
+                ],
+            button = {
+                text: 'Contact us',
+                classes: 'btn-primary'
+                }
+            )
+    }}
+
+    </div>
+</div>
