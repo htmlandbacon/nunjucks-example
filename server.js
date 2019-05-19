@@ -20,10 +20,6 @@ app.get('/', (req, res) => {
 });
  
 
-app.get('/home-page', (req, res) => {
-    res.render('pages/home-page');
-});
-
 app.get('/home-page-no-content', (req, res) => {
     res.render('pages/home-page-no-content');
 });
