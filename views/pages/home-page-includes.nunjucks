@@ -1,0 +1,12 @@
+{% extends 'templates/base-includes.nunjucks' %}
+
+{% block pageTitle %}Home page with includes{% endblock %}
+
+
+{% block content %}
+    {% include 'includes/content/jumbotron.nunjucks' %}
+
+    {% include 'includes/content/subscription.nunjucks' %}
+
+    {% include 'includes/content/3-col-content.nunjucks' %}
+{% endblock %}
